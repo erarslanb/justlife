@@ -16,6 +16,7 @@ Feature: Create weekly booking for home cleaning
     When I click on "2 hours option"
       And I click on "2 cleaners option"
       And I click on "No option under material selection"
+      And I scroll down
       And I click on "Next button"
     Then I should see "Date & Time section active"
 
@@ -25,6 +26,7 @@ Feature: Create weekly booking for home cleaning
       And I click on "09:00 option"
       And I wait for "Price loading spinner" to disappear
       And I set variable "appointmentDate" to text of element "Date value under Date & Time in booking page"
+      And I scroll down
       And I click on "Next button"
     Then I should see "Login popup"
 
@@ -36,6 +38,7 @@ Feature: Create weekly booking for home cleaning
     Then I should not see "Login popup"
 
     When I click on "Pay with cash radio button"
+      And I scroll down
       And I click on "Complete button"
       And I convert date variable "tomorrow" with format "yyyy-MM-dd" to format "dd MMM yyyy" and put it in variable "tomorrowConverted"
     Then I should see "Your order has been placed text"

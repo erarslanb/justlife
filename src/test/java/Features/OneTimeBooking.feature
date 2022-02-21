@@ -16,6 +16,7 @@ Feature: Create one-time booking for home cleaning
     When I click on "2 hours option"
       And I click on "1 cleaner option"
       And I click on "Yes option under material selection"
+      And I scroll down
       And I click on "Next button"
     Then I should see "Date & Time section active"
 
@@ -35,6 +36,7 @@ Feature: Create one-time booking for home cleaning
     Then I should not see "Login popup"
 
     When I click on "Pay with cash radio button"
+      And I scroll down
       And I click on "Complete button"
       And I wait for "Your order has been placed text"
       And I set variable "finalDate" to text of element "Date value in appointment details"

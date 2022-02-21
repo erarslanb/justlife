@@ -92,6 +92,12 @@ public class StepDefinitions extends Methods {
         testVariables.put(variable, value);
     }
 
+    @When("I scroll up")
+    public void scrollUp() { pageScrollUp(); }
+
+    @When("I scroll down")
+    public void scrollDown() { pageScrollDown(); }
+
     @Then("I should see {string}")
     public void seeElement(String selector) { waitForElement(selector);}
 

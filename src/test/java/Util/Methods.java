@@ -142,23 +142,16 @@ public class Methods {
     }
 
 
-//    public static void main(String[] args) {
-//        String dateFirst= getDate("dd MMM yyyy", 1, "days");
-//        String dateSecond= convertDate(dateFirst, "dd MMM yyyy", "EEEE, MMMM dd");
-//
-//        System.out.println(dateFirst + " " + dateSecond);
-//    }
+    public void pageScrollDown() {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,300)", "");
 
-//    public void PageScrolldown() {
-//        JavascriptExecutor jse = (JavascriptExecutor) driver;
-//        jse.executeScript("window.scrollBy(0,300)", "");
-//
-//    }
-//
-//    public void PageScrollup() {
-//        JavascriptExecutor jse = (JavascriptExecutor) driver;
-//        jse.executeScript("window.scrollBy(0,-300)", "");
-//    }
+    }
+
+    public void pageScrollUp() {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,-300)", "");
+    }
 
     public void DriverQuit() {
         driver.quit(); }
