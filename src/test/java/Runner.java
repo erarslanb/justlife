@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/Features",
+        tags = "@Booking",
         glue = "Steps",
         plugin = { "pretty",
                    "io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm",

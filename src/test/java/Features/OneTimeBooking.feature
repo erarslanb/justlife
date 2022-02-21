@@ -1,7 +1,8 @@
-Feature: Create one-time booking
+Feature: Create one-time booking for home cleaning
+  @Booking
   Scenario: User creates a one-time booking for home cleaning
     Given web browser with "JustLifeURL" page
-    When I click on "One-time radio button"
+    When I click on "One-time radio button" if exists
       And I click on "Next button"
     Then I should see "Map popup"
 

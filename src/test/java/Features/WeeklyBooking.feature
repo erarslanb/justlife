@@ -1,4 +1,5 @@
-Feature: Create one-time booking
+Feature: Create weekly booking for home cleaning
+  @Booking
   Scenario: User creates a weekly booking for home cleaning
     Given web browser with "JustLifeURL" page
     When I click on "Weekly radio button"
@@ -43,6 +44,6 @@ Feature: Create one-time booking
       And I should see "2 hours, 2 Professionals without cleaning material" in "Details value in appointment details"
       And I should see variable "tomorrowConverted" value in "Date value in appointment details"
       And I should see "09:00-09:30" in "Start Time value in appointment details"
-      And I should see "Every Week" in "Frequency value in appointment details"
+      And I should see "Every week" in "Frequency value in appointment details"
       #And I should see "Dubai Marina" in "Address value in appointment details"
 
