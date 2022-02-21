@@ -25,6 +25,7 @@ Feature: Create one-time booking for home cleaning
       And I click on "First available time"
       And I wait for "Price loading spinner" to disappear
       And I set variable "appointmentDate" to text of element "Date value under Date & Time in booking page"
+      And I scroll down
       And I click on "Next button"
     Then I should see "Login popup"
 
