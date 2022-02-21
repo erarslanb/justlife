@@ -38,4 +38,6 @@ This project uses Allure to create test reports. The report can be accessed in t
    - `allure generate allure-results --clean -o allure-report`
    - `allure open allure-report`
 
+- A screenshot of the last step will be attached to the report in case of test failure.
+
 
