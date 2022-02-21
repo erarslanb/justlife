@@ -7,10 +7,12 @@ This repository contains two test scenarios prepared with Selenium & Cucumber fo
 1. JDK 1.8+
 2. Maven
 3. Allure
-4. IntelliJ Idea (optional, for running individual scenarios separately)
+4. IntelliJ Idea & `Cucumber for Java` or `Cucumber+` plugin (optional, for running individual scenarios separately)
 5. chromedriver - If needed. The repository includes chromedriver.exe for Chrome version 98.0.4758 for Windows. When using Mac, it's also necessary to modify the chromedriver path inside Methods.java.
 
   #### The tests assume that there are no collisions for bookings, i.e. no bookings exist for the same time slot for test user. There is no practical way to clear existing appointments, ideally a new user would be used for each test but since this is not possible at the moment, it should be cleared manually before running the tests.
+  
+  #### The tests are written to run at 1080p or higher resolution.
 
 ### Setup
 
