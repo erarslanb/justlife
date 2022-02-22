@@ -2,7 +2,7 @@
 
 This repository contains two test scenarios prepared with Selenium & Cucumber for testing the home cleaning booking functionality of https://www.justlife.com/
 
-### Installation (pre-requisites)
+### Prerequisites
 
 1. JDK 1.8+
 2. Maven
@@ -14,9 +14,9 @@ This repository contains two test scenarios prepared with Selenium & Cucumber fo
   
   #### The tests are written to run at 1080p or higher resolution.
 
-### Setup
+### Installation
 
-Clone repository from [here]( https://github.com/erarslanb/justlife) or download as zip and set it up in your local machine.
+Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or download as zip and set it up in your local machine.
 
 ### Running tests
 
