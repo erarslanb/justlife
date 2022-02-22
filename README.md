@@ -33,8 +33,8 @@ Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or
 ### Reports
 
 This project uses Allure to create test reports. The report can be accessed in two ways:
-- Run command `mvn allure:serve` after running the tests. This will create the report inside temp folder and open in browser.
-- Open a terminal to the target folder inside project directory. Run these commands:
+- Run command `mvn allure:serve` after running the tests using maven. This will create the report inside temp folder and open in browser.
+- Open a terminal to the target folder inside project directory after running the tests. Run these commands:
    - `allure generate allure-results --clean -o allure-report`
    - `allure open allure-report`
 
