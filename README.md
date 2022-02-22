@@ -12,10 +12,6 @@ Recommended to use Scoop for Windows (https://scoop.sh/) and Homebrew for Mac (h
 4. IntelliJ Idea & `Cucumber for Java` or `Cucumber+` plugin (optional, for running individual scenarios separately)
 5. chromedriver - If needed. The repository includes chromedriver.exe for Chrome version 98.0.4758 for Windows. When using another OS, it's also necessary to modify the chromedriver path inside Methods.java.
 
-  **The tests assume that there are no collisions for bookings, i.e. no bookings exist for the same time slot for test user. There is no practical way to clear existing appointments, ideally a new user would be used for each test but since this is not possible at the moment, it should be cleared manually before running the tests.**
-  
-  **The tests are written to run at 1080p or higher resolution.**
-
 ### Installation
 
 Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or download as zip and set it up in your local machine.
@@ -31,6 +27,11 @@ Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or
 - Import project to IntelliJ Idea
 - Run `Runner.java` or individual feature files under `src > test > java > Features`
 (tests can also be run with maven via the maven console inside Idea)
+
+
+  **The tests assume that there are no collisions for bookings, i.e. no bookings exist for the same time slot for test user. There is no practical way to clear existing appointments, ideally a new user would be used for each test but since this is not possible at the moment, it should be cleared manually before running the tests.**
+  
+  **The tests are written to run at 1080p or higher resolution.**
 
 ### Reports
 
