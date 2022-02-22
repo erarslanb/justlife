@@ -4,6 +4,8 @@ This repository contains two test scenarios prepared with Selenium & Cucumber fo
 
 ### Prerequisites
 
+Recommended to use scoop for Windows (https://scoop.sh/) and Homebrew for Mac (https://brew.sh/) for installing Java, Maven and Allure.
+
 1. JDK 1.8+
 2. Maven
 3. Allure
@@ -22,7 +24,7 @@ Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or
 
 #### Option 1: From terminal
 
-- Open Termminal (MacOS) or powershell (Windows) and navigate to the project directory.
+- Open a command line (terminal, PowerShell) and navigate to the project directory.
 - Run command `mvn clean test` to run both features. 
 
 #### Option 2: IntelliJ Idea
@@ -34,7 +36,7 @@ Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or
 
 This project uses Allure to create test reports. The report can be accessed in two ways:
 - Run command `mvn allure:serve` after running the tests using maven. This will create the report inside temp folder and open in browser.
-- Open a terminal to the target folder inside project directory after running the tests. Run these commands:
+- Open a command line to `target` folder inside project directory after running the tests. Run these commands:
    - `allure generate allure-results --clean -o allure-report` This will generate the report inside the folder "allure-report".
    - `allure open allure-report` Opening the index.html file inside "allure-report" folder manually might often not work, this command will open the report in browser.
 
