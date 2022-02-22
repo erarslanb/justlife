@@ -4,7 +4,7 @@ This repository contains two test scenarios prepared with Selenium & Cucumber fo
 
 ### Prerequisites
 
-Recommended to use scoop for Windows (https://scoop.sh/) and Homebrew for Mac (https://brew.sh/) for installing Java, Maven and Allure.
+Recommended to use Scoop for Windows (https://scoop.sh/) and Homebrew for Mac (https://brew.sh/) for installing Java, Maven and Allure.
 
 1. JDK 1.8+
 2. Maven
@@ -37,8 +37,8 @@ Clone or fork repository from [here]( https://github.com/erarslanb/justlife), or
 This project uses Allure to create test reports. The report can be accessed in two ways:
 - Run command `mvn allure:serve` after running the tests using maven. This will create the report inside temp folder and open in browser.
 - Open a command line to `target` folder inside project directory after running the tests. Run these commands:
-   - `allure generate allure-results --clean -o allure-report` This will generate the report inside the folder "allure-report".
-   - `allure open allure-report` Opening the index.html file inside "allure-report" folder manually might often not work, this command will open the report in browser.
+   - `allure generate allure-results --clean -o allure-report` This will generate the report inside the folder `allure-report`.
+   - `allure open allure-report` Opening the index.html file inside `allure-report` folder manually might often not work, this command will open the report in browser.
 
 - A screenshot of the last step will be attached to the report in case of test failure.
 
